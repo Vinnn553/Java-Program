@@ -1,0 +1,150 @@
+import java.util.Scanner;
+
+public class OnReg {
+    public static void main(String[] Vinnn553) {
+        Scanner in = new Scanner(System.in);
+
+        int choose, position;
+        String name, phone, date, loop = "yes";
+        
+        do {
+        System.out.println("==============================================================");
+        System.out.println("                                   Company Online Registration");
+        System.out.print("Your Name                     : ");
+        name = in.nextLine();
+        System.out.print("Registration Date             : ");
+        date = in.nextLine();
+        System.out.print("Mobile Phone Number           : ");
+        phone = in.nextLine();
+        System.out.println("=============================================================");
+        System.out.println("\t\t\tCompany Name\n 1. PT. Indofood\n 2. PT. Sriwijaya Group\n 3. PT. Indomaret Group\n 4. PT. Bank Central Asia\n");
+        System.out.print("Choose Company                : ");
+        choose = in.nextInt();
+        System.out.println("=============================================================");
+        System.out.println("\t\t\tPosition\n 1. IT Software\n 2. Backend Engineer\n 3. IT Security Specialist\n");
+        System.out.print("Choose Your Position          : ");
+        position = in.nextInt();
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("Check Your Data!");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        
+        if ((choose<=1) && (position<=1)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indofood");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Software");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=1) && (position<=2)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indofood");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : Backend Engineer");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=1) && (position<=3)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indofood");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Security Specialist");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=2) && (position<=1)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Sriwijaya Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Software");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=2) && (position<=2)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Sriwijaya Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : Backend Engineer");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=2) && (position<=3)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Sriwijaya Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Security Specialist");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=3) && (position<=1)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indomaret Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Software");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=3) && (position<=2)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indomaret Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : Backend Engineer");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=3) && (position<=3)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Indomaret Group");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Security Specialist");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=4) && (position<=1)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Bank Central Asia");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Software");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=4) && (position<=2)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Bank Central Asia");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : Backend Engineer");
+            System.out.println("=============================================================");
+        }
+        else if ((choose<=4) && (position<=3)){
+            System.out.println("=============================================================");
+            System.out.println("                                PT. Bank Central Asia");
+            System.out.println("Your Name               : "+ name);
+            System.out.println("Date                    : "+ date);
+            System.out.println("Phone Number            : "+ phone);
+            System.out.println("Position                : IT Security Specialist");
+            System.out.println("=============================================================");
+        }
+        else {
+            System.out.println("Something Wrong!!!!!");
+        }
+        System.out.print("is there any wrong data? [yes/no]?");
+        loop = in.next();
+    }
+    while (loop.equalsIgnoreCase("yes"));
+
+System.out.println("Thank You");
+    
+    }
+    }
